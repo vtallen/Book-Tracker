@@ -1,0 +1,6 @@
+﻿services:
+  booktracker:
+    image: booktracker
+    build:
+      context: .
+      dockerfile: Dockerfile
