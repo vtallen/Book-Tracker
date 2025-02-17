@@ -1,0 +1,3 @@
+[submodule "OpenLibraryAPI"]
+	path = OpenLibraryAPI
+	url = git@github.com:vtallen/OpenLibrary-API-C-sharp.git

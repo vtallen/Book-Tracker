@@ -1,5 +1,6 @@
 using BookTracker.Components;
-
+using BookTracker.OpenLibraryAPI;
+/*
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -26,3 +27,11 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();
+*/
+OpenLibraryAPI testAPI = new("BookTracker", 1.0, "vincent@vtallen.com");
+var searchResults = await testAPI.Search("the lord of the rings");
+foreach (var result in searchResults)
+{
+    Console.WriteLine(result);
+    Console.WriteLine();
+}
